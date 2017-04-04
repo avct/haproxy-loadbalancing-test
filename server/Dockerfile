@@ -2,10 +2,10 @@ FROM golang
 
 MAINTAINER Simon Critchley
 
-ADD . /go/src/code.simon-critchley.co.uk/server
-WORKDIR /go/src/code.simon-critchley.co.uk/server
+ADD . /go/src/code.avct.io/server
+WORKDIR /go/src/code.avct.io/server
 
-RUN go install code.simon-critchley.co.uk/server
+RUN go install code.avct.io/server
 
 ENTRYPOINT /go/bin/server
 
